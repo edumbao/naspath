@@ -1,0 +1,191 @@
+:root {
+    --bg: #F0ECE7;
+    --text: #111111;
+    --accent: #FFCE00;
+    --card: #ffffff;
+    --footer-bg: #111111;
+    --footer-text: #cccccc;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    color: var(--text);
+    background: var(--bg);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    border-bottom: 1px solid #e0dcd7;
+}
+
+nav .logo {
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.hero {
+    padding: 8rem 5% 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 8vw, 5rem);
+    margin: 0;
+    line-height: 0.95;
+    letter-spacing: -2px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #444;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.search-container {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.search-container input {
+    padding: 1rem 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50px;
+    border: 1px solid #d1ccc7;
+    font-size: 1rem;
+}
+
+.social-proof {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 4rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    padding: 0 5% 4rem;
+}
+
+.card {
+    background: var(--card);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid #e0dcd7;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    font-size: 1.75rem;
+    margin-top: 0;
+}
+
+.benefits {
+    padding: 4rem 5%;
+    background: var(--card);
+    border-top: 1px solid #e0dcd7;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+}
+
+.icon-svg {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+    stroke: var(--text);
+    stroke-width: 1.5;
+    fill: none;
+}
+
+.cta {
+    background: var(--accent);
+    color: var(--text);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.cta:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+footer a {
+    color: var(--footer-text);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
